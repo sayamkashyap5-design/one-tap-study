@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>College Study Group</title>
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+<h1>College Study Group</h1>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<select id="subject">
+<option>DSA</option>
+<option>Java</option>
+<option>DBMS</option>
+<option>OS</option>
+<option>CN</option>
+</select>
+
+<button onclick="createSession()">Start Session</button>
+<select id="time">
+<option value="30">30 Minutes</option>
+<option value="45">45 Minutes</option>
+<option value="60">1 Hour</option>
+<option value="90">1.5 Hours</option>
+</select>
+
+<h2>Active Sessions</h2>
+
+<div id="sessions"></div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
